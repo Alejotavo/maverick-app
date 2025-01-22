@@ -1,0 +1,35 @@
+.day-forecast-content{
+    background-color: rgba(255, 255, 255, 0.2039215686);
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 5px;
+    label{
+        min-width: 120px;
+    }
+    .temp-min{
+        font-weight: 200;
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+
+    img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .day-forecast-content {
+        flex-direction: column;
+        margin: auto;
+
+        img{
+            width: 70px;
+            height: 70px;
+            margin-top: 1rem;
+        }
+    }
+  }
