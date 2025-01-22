@@ -3,7 +3,7 @@ import './App.scss'
 import { getWeather } from './service/service'
 import { Weather } from './model/model'
 import Day from './components/day/day';
-import CurrentDayInfo from './components/day/currentDayInfo';
+import CurrentDayInfo from './components/currentDayInfo/currentDayInfo';
 
 function App() {
 
