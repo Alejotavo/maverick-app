@@ -6,16 +6,16 @@ export interface Weather {
 }
 
 export interface CurrentConditions {
-    temp: number;
-    conditions: string;
-    feelslike: number;
-    humidity: number;
-    visibility: number;
-    windspeed: number;
-    icon: string;
-    datetime: string;
-    sunrise: string;
-    sunset: string
+    temp?: number | null;
+    conditions?: string | null;
+    feelslike?: number | null;
+    humidity: number | null;
+    visibility: number | null;
+    windspeed: number | null;
+    icon?: string | null;
+    datetime?: string | null;
+    sunrise?: string | null;
+    sunset?: string | null;
 }
 
 export interface DayType {

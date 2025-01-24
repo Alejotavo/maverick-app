@@ -15,15 +15,15 @@ interface CurrentDayinfoProps {
       <div className="current-day-container">
         <label>
             <img src={windIcon} alt="Wind Speed" />
-            {currentDayInfo.windspeed }Km/h
+            {currentDayInfo.windspeed !== null ? `${currentDayInfo.windspeed} Km/h` : 'No data available'}
         </label>
         <label>
         <img src={dropletIcon} alt="Wind Speed" />
-            {currentDayInfo.humidity}
+        {currentDayInfo.humidity !== null ? `${currentDayInfo.humidity}%` : 'No data available'}
         </label>
         <label>
         <img src={eyeIcon} alt="Wind Speed" />
-            {currentDayInfo.visibility}Km
+        {currentDayInfo.visibility !== null ? `${currentDayInfo.visibility} Km` : 'No data available'}
         </label>
       </div>
     );
