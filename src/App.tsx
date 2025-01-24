@@ -53,7 +53,7 @@ function App() {
           <div className='info'>
             <img
               src={`/icons/${data?.currentConditions.icon}.png`}
-              alt={data?.currentConditions.conditions}
+              alt={data?.currentConditions.conditions ?? "No Data"}
               style={{ width: "90px", height: "90px"}}
             />
             <div className='temp'>
